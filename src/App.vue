@@ -1,23 +1,22 @@
 
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
+  import {auth} from './firebase'
 
-  // import { auth } from './firebase'
-
-  // console.log(auth);
+  console.log(auth);
 
   export default {
     name: 'App',
-    components: {
-      HelloWorld
-    }
   }
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="nav">
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view />
 </template>
 
 <style>
