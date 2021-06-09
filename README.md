@@ -1,5 +1,7 @@
 # vue-firebase-chat
+A chat application based on Vue 3, Firebase and Bulma CSS
 
+This is based off of a fireship.io tutorial, although that tutorial uses Vue 2 instead.
 ## Project setup
 ```
 npm install
