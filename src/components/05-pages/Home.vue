@@ -3,15 +3,15 @@
   import Login from '../01-atoms/Login.vue'
   import User from '../00-quarks/User.vue'
   import UserProfile from '../02-molecules/UserProfile.vue'
-  import ChatList from '../03-organisms/ChatList.vue';
+  import ChatIndex from '../03-organisms/ChatIndex.vue';
 
-  export default{
+  export default {
     components: {
       // HelloWorld,
       Login,
       User,
       UserProfile,
-      ChatList
+      ChatIndex
     }
   }
 
@@ -25,7 +25,7 @@
     <template v-slot:user="{user}">
       <div v-if="user">
         <UserProfile :user="user" />
-        <ChatList :uid="user.uid" />
+        <ChatIndex :uid="user.uid" />
       </div>
       <Login v-else />
     </template>
