@@ -4,7 +4,8 @@ import { firestorePlugin } from 'vuefire'
 
 import App from './App.vue'
 
-import 'bulma/bulma.sass'
+require('@/assets/main.scss');
+// import 'bulma/bulma.sass'
 
 
 let app = createApp(App);
